@@ -1,0 +1,55 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.title {
+}
+
+.subtitle {
+  line-height: 106.19%;
+  text-align: center;
+  font-size: 25px;
+
+  @include media(max, lg) {
+    font-size: 18px;
+  }
+  &--mb15 {
+    margin-bottom: 15px;
+  }
+  &--capitalized {
+    text-transform: capitalize;
+  }
+  &--uppercase {
+    text-transform: uppercase;
+  }
+  &--dark {
+    color: #151515;
+  }
+
+  &--big {
+    font-size: 30px;
+
+    @include media(max, lg) {
+      font-size: 22px;
+    }
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--green {
+    color: $accentColor;
+  }
+
+  &--left {
+    text-align: left;
+  }
+}
+
+.text {
+}
+
+.span {
+}
+
+.link {
+}

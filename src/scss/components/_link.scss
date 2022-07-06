@@ -1,0 +1,60 @@
+.link {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: $linkColor;
+  &--adress {
+    display: none;
+    @include media(min, xl) {
+      @include flex();
+      position: relative;
+
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 150%;
+      &::before {
+        @include pseudo;
+        @include wh(14px, 20px);
+        @include background(url(@img/icons/location.svg));
+        @include pos(absolute, $top: 50%, $left: -16px);
+        transform: translateY(-50%);
+      }
+    }
+  }
+  &--mail {
+    display: none;
+    @include media(min, xl) {
+      @include flex();
+
+      font-family: "Raleway";
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+  &--tel {
+    display: none;
+    @include media(min, xl) {
+      @include flex();
+
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+  &--tel-mob {
+    @include flex();
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    @include media(min, xl) {
+      display: none;
+    }
+  }
+}

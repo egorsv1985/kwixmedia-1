@@ -1,72 +1,214 @@
 .header {
-	padding-top: 36px;
+  padding-bottom: 14px;
 
-	// .header__wrapper
-	&__wrapper {
-		@include flex (space-between, center);
-	}
+  border-bottom: 1px solid $mainColor;
+  @include media(min, xl) {
+    border-bottom: none;
+  }
 
-	// .header__box-logo
-	&__box-logo {
-		@include flex (space-between, center);
-		margin-right: 15px;
+  // .header__wrapper
+  &__wrapper {
+    @include flex($flex-direction: column);
+    gap: 5px;
+    @include media(min, xl) {
+      gap: 25px;
+    }
+  }
+  // .header__top
+  &__top {
+    @include flex(flex-end, center);
+    padding-top: 4px;
+    position: relative;
 
-		@include media (max, lg) {
+    @include media(min, xl) {
+      padding-top: 0;
+      justify-content: space-between;
 
-			margin-right: 0;
-			width: 100%;
-		}
-	}
+      &::before {
+        @include pseudo;
+        @include wh(500%, 1px);
+        @include pos(absolute, $bottom: 0, $left: 50%);
+        transform: translateX(-50%);
+        background-color: $mainColor;
+      }
+      @include media(min, 1525px) {
+        gap: 30px;
+      }
+    }
+  }
+  // .header__nav
+  &__nav {
+  }
+  // .header__link
+  &__link {
+  }
+  // .header__list
+  &__list {
+    @include flex(space-between, baseline);
+    gap: 16px;
+    @include media(min, xl) {
+      gap: 30px;
+    }
+  }
+  // .header__item
+  &__item {
+  }
+  // .header__text
+  &__text {
+    font-size: 8px;
+    line-height: 9px;
+    letter-spacing: 0;
 
-	// .header__logo
-	&__logo {}
+    color: $mainColor;
+    @include media(min, xl) {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 150%;
+      &--time {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+  }
+  &__span {
+    font-size: 18px;
 
-	// .header__nav
-	&__nav {
-		margin-right: 15px;
-	}
+    line-height: 21px;
+  }
+  // .header__button
+  &__button {
+    display: none;
+    @include media(min, xl) {
+      @include flex();
+      max-width: 224px;
 
-	// .header__social
-	&__social {
-		@include flex (space-between, center);
-		gap: 30px;
+      height: 67px;
 
-		@include media (max, lg) {
-			display: none;
-		}
-	}
+      background: $bgColorBtn;
+      &:hover {
+        border: 2px solid $btnBorderColorPrimary;
+        background: transparent;
+      }
+    }
+  }
+  // .header__bottom
+  &__bottom {
+    @include flex(space-between, center);
+    @include media(min, 1525px) {
+      justify-content: flex-start;
+      gap: 150px;
+    }
+    @include media(min, xl) {
+      gap: 50px;
+    }
+  }
+  // .header__bottom-box
+  &__bottom-box {
+    @include flex(space-between, center);
+    gap: 48px;
+  }
+  // .header__logo
+  &__logo {
+    align-self: flex-end;
+  }
 
-	// .header__link
-	&__link {
-		@include flex (center, center);
-		width: 113px;
-		height: 48px;
+  // .header__burger
+  &__burger {
+  }
+}
 
-		background: rgba(15, 15, 15, 0.35);
-		border: 1px solid #DCFFF9;
-		border-radius: 5px;
-
-		font-family: 'Roboto';
-		font-weight: 500;
-		font-size: 23px;
-		line-height: 27px;
-		text-align: center;
-
-		color: #DCFFF9;
-		position: relative;
-
-		@include media (max, lg) {
-			display: none;
-		}
-
-		&::before {
-			content: ">";
-			@include pos (absolute, $top: 10px, $right: 10px);
-			font-size: 16px;
-		}
-
-	}
-
-	// .header__burger
-	&__burger {}
+.header {
+  // .header__wrapper
+  &__wrapper {
+  }
+  // .header__top
+  &__top {
+  }
+  // .header__nav
+  &__nav {
+  }
+  // .header__link
+  &__link {
+  }
+  // .header__list
+  &__list {
+  }
+  // .header__item
+  &__item {
+  }
+  // .header__text
+  &__text {
+  }
+  // .header__span
+  &__span {
+  }
+  // .header__btn
+  &__btn {
+  }
+  // .header__bottom
+  &__bottom {
+  }
+  // .header__bottom-box
+  &__bottom-box {
+  }
+  // .header__logo
+  &__logo {
+  }
+  // .header__box
+  &__box {
+  }
+  // .header__burger
+  &__burger {
+  }
+}
+.container {
+}
+.nav {
+  // .nav__list
+  &__list {
+  }
+  // .nav__item
+  &__item {
+  }
+  // .nav__link
+  &__link {
+  }
+}
+.nav-about {
+}
+.link--mail {
+}
+.text {
+}
+.link--tel {
+}
+.btn {
+}
+.btn-primary {
+}
+.logo {
+  // .logo__img
+  &__img {
+  }
+}
+.link--adress {
+}
+.burger {
+  // .burger__inner
+  &__inner {
+  }
+}
+.link--tel-mob {
+}
+.nav-menu {
+  // .nav-menu__list
+  &__list {
+  }
+  // .nav-menu__item
+  &__item {
+  }
+  // .nav-menu__link
+  &__link {
+  }
 }

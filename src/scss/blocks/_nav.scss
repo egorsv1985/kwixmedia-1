@@ -1,36 +1,162 @@
 .nav {
-	@include media (max, lg) { 
-		display: none;
-	}
+  // .nav__list
+  &__list {
+    display: none;
+    @include media(min, xl) {
+      @include flex(space-between, center);
+      gap: 30px;
+      
+    }
+    @include media(min, 1480px){
+      gap: 48px;
+    }
+  }
+  // .nav__item
+  &__item {
+  }
+  // .nav__link
+  &__link {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
 
-	// .nav__list
-	&__list {
-		@include flex (space-between, center);
-		gap: 60px;
-		@include media (max, xl) {
-			gap: 40px;
-		}
-	}
+    color: $linkColor;
+    &:active,
+    &:hover {
+      color: #f2b720;
+    }
+    @include media(min, xl) {
+      font-size: 18px;
+      line-height: 150%;
+    }
+  }
+}
+.nav-about {
+  display: none;
+  @include media(min, xl) {
+    @include flex();
+    
+  }
+  // .nav-about__list
+  &__list {
+   @include flex(space-between, center);
+    @include media(min, 1520px) {
+      
+      gap: 30px;
+      margin-right: 35px;
+    }
+  }
+  // .nav-about__item
+  &__item {
+  }
+  // .nav-about__link
+  &__link {
+    font-weight: 400;
+  }
+}
+.nav-menu {
+  @include media(min, xl) {
+    display: none;
+  }
+  // .nav-menu__list
+  &__list {
+  }
+  // .nav-menu__item
+  &__item {
+  }
+  // .nav-menu__link
+  &__link {
+  }
+}
 
-	// .nav__item
-	&__item {}
-
-	// .nav__link
-	&__link {
-
-		font-family: 'Roboto';
-		font-size: 18px;
-		line-height: 21px;
-		text-align: center;
-
-		color: $navLinkColor;
-
-		&:hover {
-
-			font-weight: 500;
-			color: $mainColor;
-		}
-
-
-	}
+.header {
+  // .header__wrapper
+  &__wrapper {
+  }
+  // .header__top
+  &__top {
+  }
+  // .header__nav
+  &__nav {
+  }
+  // .header__link
+  &__link {
+  }
+  // .header__list
+  &__list {
+  }
+  // .header__item
+  &__item {
+  }
+  // .header__text
+  &__text {
+  }
+  // .header__span
+  &__span {
+  }
+  // .header__button
+  &__button {
+  }
+  // .header__bottom
+  &__bottom {
+  }
+  // .header__bottom-box
+  &__bottom-box {
+  }
+  // .header__logo
+  &__logo {
+  }
+  // .header__burger
+  &__burger {
+  }
+}
+.container {
+}
+.nav {
+  // .nav__list
+  &__list {
+  }
+  // .nav__item
+  &__item {
+  }
+  // .nav__link
+  &__link {
+  }
+}
+.nav-about {
+}
+.link--mail {
+}
+.text {
+}
+.link--tel {
+}
+.button {
+}
+.logo {
+  // .logo__img
+  &__img {
+  }
+}
+.link--adress {
+}
+.nav-menu--desctop {
+}
+.nav-menu {
+  // .nav-menu__list
+  &__list {
+  }
+  // .nav-menu__item
+  &__item {
+  }
+  // .nav-menu__link
+  &__link {
+  }
+}
+.burger {
+  // .burger__inner
+  &__inner {
+  }
+}
+.link--tel-mob {
 }

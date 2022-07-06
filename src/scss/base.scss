@@ -129,16 +129,16 @@
 body {
 
 	margin: 0;
-	background: $bgColor;
+	
 	color: $mainColor;
 }
 
 .container {
 	max-width: 1560px;
-	padding: 0 30px;
+	padding: 0 20px;
 	margin: 0 auto;
 
-	@include media (max, lg) {
-		padding: 0 15px;
+	@include media(min, lg) {
+		padding: 0 20px;
 	}
 }

@@ -1,89 +1,109 @@
 <header class="header">
-	<div class="container">
-		<div class="header__wrapper">
-			<div class="header__top">
-				<ul class="header__adress-list">
-					<li class="header__adress-item">
-						<a href="#" class="header__link">Серпухов, Октябрьская, 12</a>
-					</li>
-					<li class="header__adress-item">
-						<p class="header__text text">пн-пт 09:00 - 20:00</p>
-					</li>
-				</ul>
-			</div>
-			<a href="" class="header__logo logo">
-				<img src="@img/icons/logo.svg" alt="logo" class="logo__img">
-			</a>
-			<div class="header__box">
-				<button type="button" class="header__burger burger">
-					<div class="burger__inner">
-						<span></span>
-					</div>
-				</button>
-			</div>
-		</div>
-	</div>
-</header>
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__top">
+        <nav class="header__nav nav nav-about">
+          <ul class="nav__list nav-about__list">
+            <li class="nav__item nav-about__item">
+              <a href="#" class="nav__link nav-about__link">О нас</a>
+            </li>
+            <li class="nav__item nav-about__item">
+              <a href="#" class="nav__link nav-about__link">Портфолио</a>
+            </li>
+            <li class="nav__item nav-about__item">
+              <a href="#" class="nav__link nav-about__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="mailto: info@kwix-media.ru" class="header__link link--mail"
+          >info@kwix-media.ru
+        </a>
+        <ul class="header__list">
+          <li class="header__item">
+            <p class="header__text text">Серпухов, Октябрьская, 12</p>
+          </li>
+          <li class="header__item">
+            <p class="header__text text header__text--time">
+              пн-пт <span class="header__span"></span> 09:00 - 20:00
+            </p>
+          </li>
+        </ul>
+        <a href="tel:+79268133621" class="header__link link--tel"
+          >+7 (926) 813-36-21</a
+        >
+        <a
+          class="header__button button"
+          data-popup="#callback"
+          href="#callback"
+          role="button"
+          >Обсудить проект</a
+        >
+      </div>
 
-<header class="header">
-	<div class="header__top">
-	  <div class="container">
-		<div class="header__wrapper">
-		  <ul class="about__list">
-			<li class="about__item"><a href="#!" class="about__link">О нас</a></li>
-			<li class="about__item"><a href="#!" class="about__link">Портфолио</a></li>
-			<li class="about__item"><a href="#!" class="about__link">Контакты</a></li>
-		  </ul>
-		  <ul class="adress__list">
-			<li class="adress__item">info@kwix-media.ru</li>
-			<li class="adress__item adress__item--strong">Серпухов, Октябрьская, 12</li>
-			<li class="adress__item">пн-пт 09:00 - 20:00</li>
-		  </ul>
-		  <a href="tel:+79268133621" class="header__tel">+7 (926) 813-36-21</a>
-		  <a href="#!" class="header__button discuss-button">Обсудить проект</a>
-		</div>
-	  </div>
-	</div>
-	<div class="header__bottom">
-	  <div class="container">
-		<div class="header__wrapper">
-		  <a href="/" class="logo">
-			<svg class="logo__icons" width="220" height="51">
-			  <use xlink:href="./img/icons/sprite.svg#logo"></use>
-			</svg>
-		  </a>
-		  <a href="#!" class="location">
-			<svg width="20" height="21">
-			  <use xlink:href="./img/icons/sprite.svg#location"></use>
-			</svg>
-			Серпухов
-		  </a>
-		  <nav class="nav header__nav">
-			<ul class="nav__list">
-			  <li class="nav__item">
-				<a href="#!" class="nav__link">Создание сайтов</a>
-			  </li>
-			  <li class="nav__item">
-				<a href="#!" class="nav__link">Продвижение</a>
-			  </li>
-			  <li class="nav__item">
-				<a href="#!" class="nav__link">Контекстная реклама</a>
-			  </li>
-			  <li class="nav__item">
-				<a href="#!" class="nav__link">Поддержка</a>
-			  </li>
-			  <li class="nav__item">
-				<a href="#!" class="nav__link">Изготовление контента</a>
-			  </li>
-			</ul>
-		  </nav>
-		  <div class="burger">
-			<span class="burger__line"></span>
-			<span class="burger__line"></span>
-			<span class="burger__line"></span>
-		  </div>
-		  <a href="tel:+79268133621" class="header__tel header__tel--mobile">+7 (926) 813-36-21</a>
-		</div>
-	  </div>
-	</div>
-  </header>
+      <div class="header__bottom">
+        <div class="header__bottom-box">
+          <a href="" class="header__logo logo">
+            <img src="@img/icons/logo.svg" alt="logo" class="logo__img" />
+          </a>
+          <a href="#" class="header__link link--adress">Серпухов</a>
+        </div>
+        <nav class="header__nav nav nav-desctop">
+          <ul class="nav__list nav-desctop__list">
+            <li class="nav__item nav-desctop__item">
+              <a href="#" class="nav__link nav-desctop__link"
+                >Создание сайтов</a
+              >
+            </li>
+            <li class="nav__item nav-desctop__item">
+              <a href="#" class="nav__link nav-desctop__link">Продвижение</a>
+            </li>
+            <li class="nav__item nav-desctop__item">
+              <a href="#" class="nav__link nav-desctop__link"
+                >Контекстная реклама</a
+              >
+            </li>
+
+            <li class="nav__item nav-desctop__item">
+              <a href="#" class="nav__link nav-desctop__link">Поддержка</a>
+            </li>
+            <li class="nav__item nav-desctop__item">
+              <a href="#" class="nav__link nav-desctop__link"
+                >Изготовление контента</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="header__burger burger">
+          <div class="burger__inner">
+            <span></span>
+          </div>
+        </button>
+
+        <a href="tel:+79268133621" class="header__link link--tel-mob"
+          >+7 (926) 813-36-21</a
+        >
+      </div>
+      <nav class="header__nav nav nav-menu">
+        <ul class="nav__list nav-menu__list">
+          <li class="nav__item nav-menu__item">
+            <a href="#" class="nav__link nav-menu__link">Создание сайтов</a>
+          </li>
+          <li class="nav__item nav-menu__item">
+            <a href="#" class="nav__link nav-menu__link">Продвижение</a>
+          </li>
+          <li class="nav__item nav-menu__item">
+            <a href="#" class="nav__link nav-menu__link"
+              >Изготовление контента</a
+            >
+          </li>
+          <li class="nav__item nav-menu__item">
+            <a href="#" class="nav__link nav-menu__link">Контекстная реклама</a>
+          </li>
+          <li class="nav__item nav-menu__item">
+            <a href="#" class="nav__link nav-menu__link">Поддержка</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

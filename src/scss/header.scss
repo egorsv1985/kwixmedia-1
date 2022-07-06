@@ -4,6 +4,7 @@
   border-bottom: 1px solid $mainColor;
   @include media(min, xl) {
     border-bottom: none;
+    padding-bottom: 24px;
   }
 
   // .header__wrapper
@@ -95,12 +96,13 @@
   // .header__bottom
   &__bottom {
     @include flex(space-between, center);
+
+    @include media(min, xl) {
+      gap: 50px;
+    }
     @include media(min, 1525px) {
       justify-content: flex-start;
       gap: 150px;
-    }
-    @include media(min, xl) {
-      gap: 50px;
     }
   }
   // .header__bottom-box

@@ -5,6 +5,8 @@
     overflow: hidden;
     position: fixed;
 
+    background-color: #fafafa;
+
     z-index: 9999;
     &__span {
       line-height: 10px;
@@ -19,16 +21,11 @@
     }
   }
   .nav-menu {
-	padding: 18px 0 10px;
-	position: relative;
-	&::before{
-		@include pseudo;
-		@include wh (112%, 1px);
-@include pos (absolute, $top: 10px, $left: 50%);
-transform: translateX(-50%);
-		background-color: $mainColor;
-	}
-  
+    padding: 5px 0 10px;
+    margin-top: 20px;
+
+    border-block: 1px solid $bgColor;
+
     // .nav__list
     &__list {
       @include flex(center, center, wrap);
@@ -42,5 +39,8 @@ transform: translateX(-50%);
     // .nav__link
     &__link {
     }
+  }
+  .main{
+    top: 60px;
   }
 }

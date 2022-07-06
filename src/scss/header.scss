@@ -1,7 +1,8 @@
 .header {
-  padding-bottom: 14px;
+  padding-bottom: 20px;
 
   border-bottom: 1px solid $mainColor;
+  
   @include media(min, xl) {
     border-bottom: none;
     padding-bottom: 24px;
@@ -19,19 +20,12 @@
   &__top {
     @include flex(flex-end, center);
     padding-top: 4px;
-    position: relative;
+  
 
     @include media(min, xl) {
       padding-top: 0;
       justify-content: space-between;
 
-      &::before {
-        @include pseudo;
-        @include wh(500%, 1px);
-        @include pos(absolute, $bottom: 0, $left: 50%);
-        transform: translateX(-50%);
-        background-color: $mainColor;
-      }
       @include media(min, 1525px) {
         gap: 30px;
       }
@@ -59,6 +53,7 @@
     font-size: 8px;
     line-height: 9px;
     letter-spacing: 0;
+    font-weight: 400;
 
     color: $mainColor;
     @include media(min, xl) {

@@ -32,7 +32,7 @@
 .btn {
   @include flex(center, center);
   width: 100%;
-  font-family: "Raleway";
+ 
 
   font-weight: 500;
   font-size: 11px;
@@ -42,6 +42,22 @@
     font-size: 21px;
     line-height: 25px;
   }
+  &--mob {
+    display: flex;
+    @include media(min, xl) {
+      display: none;
+    }
+  }
+  
+   
+    &--desctop {
+     display: none;
+     @include media(min, xl) {
+      display: flex;
+     }
+      
+    }
+  
 }
 
 .btn-primary {

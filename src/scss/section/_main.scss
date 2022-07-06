@@ -71,7 +71,7 @@
     gap: 20px;
     padding-left: 26px;
     max-width: 150px;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     @include media(min, xl) {
       gap: 32px;
       max-width: 570px;
@@ -118,17 +118,9 @@
   // .main__btn
   &__btn {
     max-width: 131px;
-    &--mob {
-      @include media(min, xl) {
-        display: none;
-      }
-    }
-    @include media(min, xl) {
-      max-width: 265px;
-      &--desctop {
-        display: flex;
-      }
-    }
+    @include media(min, xl){
+		max-width: 231px;
+	}
   }
   // .main__img-absolute
   &__img-absolute {
